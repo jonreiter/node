@@ -534,6 +534,7 @@ type UpgradeConfig struct {
 	BEP128Height                                    int64 `mapstructure:"BEP128Height"`
 	BEP151Height                                    int64 `mapstructure:"BEP151Height"`
 	BEP153Height                                    int64 `mapstructure:"BEP153Height"`
+	BEP171Height                                    int64 `mapstructure:"BEP171Height"`
 	BEP173Height                                    int64 `mapstructure:"BEP173Height"`
 }
 
@@ -561,6 +562,7 @@ func defaultUpgradeConfig() *UpgradeConfig {
 		BEP82Height:                math.MaxInt64,
 		BEP84Height:                math.MaxInt64,
 		BEP87Height:                math.MaxInt64,
+		BEP171Height:               math.MaxInt64,
 		FixFailAckPackageHeight:    math.MaxInt64,
 		EnableAccountScriptsForCrossChainTransferHeight: math.MaxInt64,
 	}

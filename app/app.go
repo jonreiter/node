@@ -335,6 +335,7 @@ func SetUpgradeConfig(upgradeConfig *config.UpgradeConfig) {
 	upgrade.Mgr.AddUpgradeHeight(upgrade.BEP128, upgradeConfig.BEP128Height)
 	upgrade.Mgr.AddUpgradeHeight(upgrade.BEP151, upgradeConfig.BEP151Height)
 	upgrade.Mgr.AddUpgradeHeight(upgrade.BEP153, upgradeConfig.BEP153Height)
+	upgrade.Mgr.AddUpgradeHeight(upgrade.BEP171, upgradeConfig.BEP171Height)
 	upgrade.Mgr.AddUpgradeHeight(upgrade.BEP173, upgradeConfig.BEP173Height)
 
 	// register store keys of upgrade
